@@ -1,11 +1,11 @@
 module.exports = {
    template:`<div style="display:inline-block;font-size:18px">
                <span>{{state}}</span>
-               <span :style="timeStyle" style="display:inline-block">{{nHour}}</span>
+               <span :style="timeStyle">{{nHour}}</span>
                <span>{{colon}}</span>
-               <span :style="timeStyle" style="display:inline-block">{{nMinute}}</span>
+               <span :style="timeStyle">{{nMinute}}</span>
                <span>{{colon}}</span>
-               <span :style="timeStyle" style="display:inline-block">{{nSecond}}</span>
+               <span :style="timeStyle">{{nSecond}}</span>
              </div>`,
     props:{
     	end:{ //开抢时间
@@ -59,6 +59,7 @@ module.exports = {
     computed:{
         timeStyle:function(){
             var style = {
+                display:'inline-block',
                 background:"#fb8e25",
                 color: "#fff",
                 padding: "4px",
@@ -101,10 +102,10 @@ module.exports = {
     },
     methods:{
        startCallback:function(){
-           this.$emit("start") //开始的动作
+           this.$emit("startCB") //开始的动作
        },
        endCallback:function(){
-       	   this.$emit("end") // 结束时的动作
+       	   this.$emit("endCB") // 结束时的动作
        },
        _extend:function(destination, source){
           for (var property in source) {
