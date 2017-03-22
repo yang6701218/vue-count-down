@@ -1,0 +1,22 @@
+{
+  "name": "vue-count-down",
+  "version": "1.0.0",
+  "description": "vue-componet for count down",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/yang6701218/vue-count-down.git"
+  },
+  "keywords": [
+    "商品抢购倒计时插件"
+  ],
+  "author": "Young",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yang6701218/vue-count-down/issues"
+  },
+  "homepage": "https://github.com/yang6701218/vue-count-down"
+}
